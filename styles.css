@@ -8,8 +8,8 @@
 
 body {
     max-width: 100%;
-    overflow: scroll;
-    overflow-x: scroll;
+    /* overflow: scroll;
+    overflow: hidden; */
     padding: 1rem;
     background-color: var(--black);
     color: var(--white);
@@ -19,6 +19,7 @@ body {
 .content {
     max-width:90rem;
     margin: 0 auto;
+    overflow: auto;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: var(--white);
     justify-content: center;
@@ -125,6 +126,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 1rem;
+    width: 100%;
     border-radius: 1rem;
     min-height: 18rem;
     align-items: center;
@@ -174,6 +176,17 @@ body {
     text-align: center;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
+
+.body-blurb-2{
+    margin: 1rem;
+    padding: 0.5rem 0;
+    background-color: var(--purple-background);
+    color: var(--pink-background);
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
    
 
 #banner {
@@ -222,7 +235,7 @@ body {
         padding: 1rem;
         width: 100%;
         max-width: 100%;
-        display: grid;
+        /* display: grid;
         grid-template: 
         "b" minmax(8em, auto)
         "ii1" minmax(8em, auto)
@@ -231,8 +244,8 @@ body {
         "p1" minmax(8em, auto)
         "bi1" minmax(8em, auto)
         "bi2" minmax(8em,auto)
-        "bi3" minmax(8em,auto);    
-    }
+        "bi3" minmax(8em,auto);      */
+    } 
     .banner{
         max-width: 100%
     }
@@ -265,9 +278,24 @@ body {
         height: 14rem;
     }
 
+    .body-blurb-1{
+        font-size: 1rem;
+    }
+
     .bodyimage3 {
         justify-content: center;
         align-items: center;
+    }
+
+    .paragraph2{
+        font-size: 1.5rem;
+    }
+
+    .body-blurb-2{
+        max-width: 100%;
+        font-size: 1.5rem;
+        margin: auto;
+        text-align: left;
     }
 }
     
@@ -301,6 +329,7 @@ body {
 
     .introduction-card {
         padding: 0.75rem;
+        max-width: 100%;
     }
 
     .introduction-images {
@@ -308,6 +337,7 @@ body {
         height: auto;
         max-height: 21rem;
         width: 100%;
+        max-width: 100%;
         object-fit: cover;       
     }
 
@@ -325,6 +355,13 @@ body {
     #introductionImage3 .introduction-images{
         width: 100%;
         height: auto;
+    }
+
+    .body-blurb-2{
+        max-width: 100%;
+        font-size: 1.5rem;
+        margin: auto;
+        text-align: left;
     }
 
 }
