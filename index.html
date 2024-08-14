@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Strange Weather</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+ <div class="content">
+        <div class="banner" id="banner">
+            <div class="banner-title"></div>
+            <div class="banner-subtitle"></div>
+         </div>
+
+            <button class="button" id="but" onclick="darkmode()">
+              <img src="https://static.vecteezy.com/system/resources/thumbnails/004/641/030/small/simple-yellow-sun-illustration-on-white-background-creative-icon-vector.jpg" alt="sun image" id="dmbutton">
+            </button>
+
+            <script>
+              function darkmode() {
+                 var element = document.body;
+                 var img = document.getElementById("dmbutton");
+                 element.classList.toggle("dark-mode");
+                 if (element.classList.contains("dark-mode")) {
+                    img.src = "https://img.freepik.com/free-vector/natural-golden-crescent-moon-stars-dark-background_1017-51979.jpg?size=626&ext=jpg"; 
+                    img.alt = "moon image";
+                } else {
+                    img.src = "https://static.vecteezy.com/system/resources/thumbnails/004/641/030/small/simple-yellow-sun-illustration-on-white-background-creative-icon-vector.jpg"; 
+                    img.alt = "sun image";
+                }
+              }
+           </script>
+
+  <div class="introduction-card" id="introductionImage1">
+    <img class="introduction-images" id="intro-img1" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6YV20LCdYgkCXgkz19hKzApXa6NXbF3kZazwuCb8Ic0OROtF3LIClHrVQduufDS6dhZ5OB-dEV4IW4D6rz-Cui-1OehB0VFQIBlD8Beb0x_z15IzlLLDLiBiRMf163JmtbUMXZWaxjLKT/s1600-rw/tumblr_lzbiewJvNT1qfsqzho1_1280.jpg" alt="image1">
+    <div class="introduction-images-blurb" id="intro-blurb ">The Anthropocene. Coined by the Dutch chemist Paul Crutzen is the name for our unofficial unit of geological time, used to describe the most recent period in Earth’s history which started when human activity began to have a such significant impact on the earth that there would be evidence of the damage for millennia to come.</div>
+  </div>
+  <div class="introduction-card" id="introductionImage2">
+    <img class="introduction-images" id="intro-img2" src="https://assets.editorial.aetnd.com/uploads/2009/10/mill-industrial-revolution-gettyimages-464440961.jpg" alt="image2">
+    <div class="introduction-images-blurb" id="intro-blurb2">The legitimacy of the term has been debated and there are still arguments for whether the Anthropocene began with the industrial revolution, during WWII when atomic bombs where frequently being used or if it began during the Great Acceleration which was the dramatic increase in human population and activity in the 1950s.</div>
+  </div>
+  <div class="introduction-card" id="introductionImage3">
+    <img class="introduction-images" id="intro-img3" src="https://i0.wp.com/thefifthestate.com.au/wp-content/uploads/2023/03/shutterstock_1098811376-scaled.jpg?fit=2560%2C1440&ssl=1" alt="image3">
+    <div class="introduction-images-blurb" id="intro-blurb3">One of the most serious impacts humans have made during the Anthropocene is deforestation. With the earths huge increase in population the demand for housing and food has increased which has led to the destruction of natural forest. Deforestation has been used to accommodate the needs of the people. This, however, has led to irreversible damage done to the planet.</div>
+  </div>
+
+  <div class="paragraph1" id="p1">Humans have made a significant impact to not only deforestation but have also caused an increase in biodiversity loss with many species now becoming endangered or extinct. Along with changes in animal behaviour such as nocturnality with some animals becoming nocturnal to avoid human interaction. Geomorphology has also been accredited to human activity changes in the environment that cause drainage patterns that are traceable to human activity. Examples such as Calthemite formations which had not previously occurred before humans’ modification of the terrain.</div>
+
+  <div class="body-card" id="bodyimage1">
+    <img class="body-images" id="body-img1" src="https://mahb.stanford.edu/wp-content/uploads/2020/07/5010770661_91b8614818_o.jpg" alt="image4">
+    <div class="body-blurb-1" id="bodyblurb">This cartogram infographic shows the population density of humans on earth. With the global population increasing steadily the damage done to planet will be increased exponentially. The destruction of land and the displacement of wildlife across the globe has been so severe the planet may never recover. The Anthropocene will be viewed as a critical turning point in the history of earth.</div>
+  </div>
+
+  <div class="body-card" id="bodyimage2">
+    <div class="paragraph2" id="p2">Drastic changes need to be made to ensure the survival of our species and the planet. By working harmoniously with the environment around us humans have begun to undo the damage they have dealt by creating more ecofriendly energy systems recyclables and renewable fuel. With the continuous growth of technology and the improvements of fuel and power efficiency we have begun to seek further advancement from outside our own world. While we already utilise the power of the universe in the form of solar power. Our demand and need for more resources still require more ecofriendly renewable options. We as a civilisation must look to the galaxy as means of propelling us into future epochs on the earth. </div>
+  </div>
+  <br>
+  <div class="body-card" id="bodyimage3">
+    <img class="body-images" id="bodyimage3" src="https://media.licdn.com/dms/image/D4E12AQFV4BZoFye9Bw/article-cover_image-shrink_720_1280/0/1711991811496?e=2147483647&v=beta&t=VY2yI94xokX0BQuzy889ZoHxowNcBGipWP3LAbouPIQ" alt="image6">
+    <div class="body-blurb-2" id="bodyblurb"><em>List of Reference</em><br><br>Anthroholic, ‘epoch cartoon’, epoch, image, viewed 7 August 2024, https://anthroholic.com/epoch<br><br>Delgado M, ‘futuristic city’, power purchase agreements a comprehensive guide fort the energy community (focus on mexico), image, viewed 7 August 2024, https://media.licdn.com/dms/image/D4E12AQFV4BZoFye9Bw/article-cover_image-shrink_720_1280/0/1711991811496?e=2147483647&v=beta&t=VY2yI94xokX0BQuzy889ZoHxowNcBGipWP3LAbouPIQ<br><br>Menzel A, ‘the iron rolling mill’, The iron rolling mill (modern cyclopes), painting, viewed 7 August 2024, https://en.wikipedia.org/wiki/The_Iron_Rolling_Mill_(Modern_Cyclopes)<br><br>Richard W, ‘cartography: a popular perspective’, remapping the worlds population visualising data using cartograms, image, viewed 7 August 2024, https://www.esri.com/news/arcuser/0110/cartograms.html<br><br>Starline, ‘vector art’, natural golden crescent moon and stars dark background vector, image, viewed 7 August 2024, https://www.shutterstock.com/image-vector/natural-golden-crescent-moon-stars-dark-2451723493?irgwc=1&pl=77643-<br><br>Webdesign, ‘vector art’, sun icon symbol vector, image, viewed 7 August 2024, https://www.shutterstock.com/image-vector/sun-icon-symbol-vector-1039643602?irgwc=1&pl=77643-<br><br>Witkowski S, ‘deforestation’, new tool by uchicago data science institute sheds light on palm oil production, photograph, viewed 7 August 2024, https://news.uchicago.edu/story/new-tool-created-uchicago-data-science-institute-sheds-light-palm-oil-production<br><br>  </div>
+  </div>
+
+  
+
+   
+</div>
+
+</div>
+</body>
+</html>

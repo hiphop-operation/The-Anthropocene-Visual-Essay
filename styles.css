@@ -1,0 +1,350 @@
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --purple-background: #000000;
+    --pink-background: #faf6f2;
+    --client-background: #010101;
+}
+
+body {
+    max-width: 100%;
+    overflow: scroll;
+    overflow-x: scroll;
+    padding: 1rem;
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 2rem;
+}
+
+.content {
+    max-width:90rem;
+    margin: 0 auto;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: var(--white);
+    justify-content: center;
+    position: relative;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    background-image: url(https://anthroholic.com/wp-content/uploads/2023/07/What-is-an-Epoch-in-Geological-Time-Scale-in-Archaeology.webp);
+    background-size: cover;
+    background-position: center;
+    padding: 1rem;
+    border-radius: 1rem;
+    max-height: 12rem;
+    
+}
+
+
+.banner-title {
+    font-size: 3rem;
+    padding: 1rem;
+    text-align: left;
+    
+}
+
+.banner-subtitle {
+    font-size: 2rem;
+    padding: 1rem;
+    text-align: end;;
+    flex: 1
+}
+
+.button {
+    position: fixed;
+    top: 2rem;
+    right: 3rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+.button img{
+    width: 2rem;
+    height: 2rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.dark-mode {
+    background-color: var(--white);
+    color: var(--black);
+  }
+
+.dark-mode .paragraph1,
+.dark-mode .introduction-images-blurb,
+.dark-mode .body-blurb-1,
+.dark-mode .body-blurb-2 {
+    color: var(--black);
+    background-color: var(--white);
+}
+
+.dark-mode #bodyimage2 {
+    color: var(--white);
+}
+
+
+
+.introduction-card {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 1rem;
+    min-height: 18rem;
+    align-items: center;
+    text-align: center;
+}
+
+.introduction-images {
+    width: 100%;
+    max-height: 31rem;
+    border-radius: 1rem;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.introduction-images-blurb {
+    padding: 0.5rem 0;
+    background-color: var(--purple-background);
+    color: var(--pink-background);
+    font-size: 1rem;
+}
+
+.paragraph1 {
+    margin: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.body-card {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 1rem;
+    min-height: 18rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.body-images {
+    width: 100%;
+    border-radius: 1rem;
+    max-height: 50rem;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.bodyblurb{
+    margin: 1rem;
+    padding: 0.5rem 0;
+    background-color: var(--purple-background);
+    color: var(--pink-background);
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.body-blurb-1{
+    text-align: center;
+    font-size: 2rem;
+}
+  
+#bodyimage2 {
+    background-image: url("https://images.squarespace-cdn.com/content/v1/5ca9651a65a707e04a9c00ff/1554619174951-1JAB9MS2ZA08AX49NEVO/Edge_of_Observable_1.jpg?format=1500w");
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    height: 60rem;
+    color: var(--white);
+    padding: 1rem;
+    display: flex;
+}
+
+.paragraph2 {
+    font-size: 2rem;
+    padding: 1rem;
+    text-align: center;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+   
+
+#banner {
+    grid-area: b;
+}
+
+#button {
+    grid-area: but;
+}
+
+#introductionImage1 {
+    grid-area: ii1;
+}
+
+#introductionImage2 {
+    grid-area: ii2;
+}
+
+#introductionImage3 {
+    grid-area: ii3;
+}
+
+#p1 {
+    grid-area: p1;
+}
+
+#bodyimage1 {
+    grid-area: bi1;
+}
+
+#bodyimage2 {
+    grid-area: bi2;
+}
+
+#bodyimage3 {
+    grid-area: bi3;
+}
+
+
+
+
+/* Media Queries for Responsive Design */
+/*template for mobile phone*/
+@media (max-width:49.9em) {
+    .content {
+        padding: 1rem;
+        width: 100%;
+        max-width: 100%;
+        display: grid;
+        grid-template: 
+        "b" minmax(8em, auto)
+        "ii1" minmax(8em, auto)
+        "ii2" minmax(8em, auto)
+        "ii3" minmax(8em, auto)
+        "p1" minmax(8em, auto)
+        "bi1" minmax(8em, auto)
+        "bi2" minmax(8em,auto)
+        "bi3" minmax(8em,auto);    
+    }
+    .banner{
+        max-width: 100%
+    }
+
+    .introduction-card{
+        margin: auto;
+    }
+
+    .introduction-images-blurb{
+        margin: auto;
+    }
+
+    
+    .button img {
+        width: 2rem;
+        height: 2rem;
+    }
+    .paragraph1 {
+        font-size: 1rem;
+        padding: 3rem;
+        margin: auto;
+    }
+
+    .introduction-card {
+        padding: 0.5rem;
+    }
+
+    .introduction-images {
+        max-width: 100%;
+        height: 14rem;
+    }
+
+    .bodyimage3 {
+        justify-content: center;
+        align-items: center;
+    }
+}
+    
+/*template for tablet*/
+@media (min-width: 50em) and (max-width: 74.9em){
+    .content {
+        display: grid;
+        grid-template:
+        "b   b   b   b   b   b" minmax(8em, auto)
+        "ii1 ii1 ii1 ii2 ii2 ii2" minmax(8em, auto)
+        "ii3 ii3 ii3 ii3 ii3 ii3" minmax(8em, auto)
+        "p1  p1  p1  p1  p1  p1"  minmax(8em, auto)
+        "bi1 bi1 bi1 bi1 bi1 bi1" minmax(8em, auto)
+        "bi2 bi2 bi2 bi2 bi2 bi2" minmax(8em, auto)
+        "bi3 bi3 bi3 bi3 bi3 bi3" minmax(8em,auto);
+    }
+
+    .banner-title {
+        font-size: 2rem;
+    }
+    
+    .banner-subtitle {
+        font-size: 2rem;
+        margin: 2rem;
+    }
+     
+    
+    .paragraph1 {
+        font-size: 2rem;
+    }
+
+    .introduction-card {
+        padding: 0.75rem;
+    }
+
+    .introduction-images {
+        height: 16rem;
+        height: auto;
+        max-height: 21rem;
+        width: 100%;
+        object-fit: cover;       
+    }
+
+    
+    #introductionImage1 .introduction-images{
+        width: 100%;
+        height: auto;
+    }
+
+    #introductionImage2 .introduction-images{
+        width: 100%;
+        height: auto;
+    }
+
+    #introductionImage3 .introduction-images{
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+/*template for desktop*/
+@media (min-width: 75em){
+    .content{
+        display:grid;
+        grid-template:
+        "b   b   b   b   b   b   b   b   b   b   b   b" minmax(8em, auto)
+        "ii1 ii1 ii1 ii1 ii1 ii2 ii2 ii2 ii2 ii3 ii3 ii3" minmax(8em, auto)
+        "p1  p1  p1  p1  p1  p1  p1  p1  p1  p1  p1  p1" minmax(8em, auto)
+        "bi1 bi1 bi1 bi1 bi1 bi1 bi1 bi1 bi1 bi1 bi1 bi1" minmax(8em, auto)
+        "bi2 bi2 bi2 bi2 bi2 bi2 bi2 bi2 bi2 bi2 bi2 bi2" minmax(8em, auto)
+        "bi3 bi3 bi3 bi3 bi3 bi3 bi3 bi3 bi3 bi3 bi3 bi3" minmax(8em, auto);
+    }
+
+    .introduction-images-blurb{
+        width: 100%;
+        height: auto;
+        border-radius: 1rem;
+    }
+}
