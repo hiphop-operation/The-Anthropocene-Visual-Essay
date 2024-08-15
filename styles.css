@@ -36,7 +36,6 @@ body {
     
 }
 
-
 .banner-title {
     font-size: 3rem;
     padding: 1rem;
@@ -83,8 +82,6 @@ body {
 .dark-mode #bodyimage2 {
     color: var(--white);
 }
-
-
 
 .introduction-card {
     display: flex;
@@ -226,6 +223,7 @@ body {
 /*template for mobile phone*/
 @media (max-width:49.9em) {
     .content {
+        margin: auto;
         padding: 1rem;
         width: 100%;
         max-width: 100%;
