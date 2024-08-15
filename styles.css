@@ -8,8 +8,6 @@
 
 body {
     max-width: 100%;
-    /* overflow: scroll;
-    overflow: hidden; */
     padding: 1rem;
     background-color: var(--black);
     color: var(--white);
@@ -19,7 +17,7 @@ body {
 .content {
     max-width:90rem;
     margin: 0 auto;
-    overflow: auto;
+    overflow-x: hidden;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: var(--white);
     justify-content: center;
@@ -109,8 +107,6 @@ body {
 
 .introduction-images-blurb {
     padding: 0.5rem 0;
-    background-color: var(--purple-background);
-    color: var(--pink-background);
     font-size: 1rem;
 }
 
@@ -178,14 +174,12 @@ body {
 }
 
 .body-blurb-2{
-    margin: 1rem;
-    padding: 0.5rem 0;
-    background-color: var(--purple-background);
-    color: var(--pink-background);
-    font-size: 2rem;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    margin-left: 2rem;
+    padding: 1rem;
+    font-size: 0.70rem;
+    text-align: left;
 }
    
 
@@ -235,7 +229,7 @@ body {
         padding: 1rem;
         width: 100%;
         max-width: 100%;
-        /* display: grid;
+        display: grid;
         grid-template: 
         "b" minmax(8em, auto)
         "ii1" minmax(8em, auto)
@@ -244,7 +238,7 @@ body {
         "p1" minmax(8em, auto)
         "bi1" minmax(8em, auto)
         "bi2" minmax(8em,auto)
-        "bi3" minmax(8em,auto);      */
+        "bi3" minmax(8em,auto);     
     } 
     .banner{
         max-width: 100%
@@ -293,7 +287,7 @@ body {
 
     .body-blurb-2{
         max-width: 100%;
-        font-size: 1.5rem;
+        font-size: 0.70rem;
         margin: auto;
         text-align: left;
     }
@@ -359,7 +353,7 @@ body {
 
     .body-blurb-2{
         max-width: 100%;
-        font-size: 1.5rem;
+        font-size: 0.70rem;
         margin: auto;
         text-align: left;
     }
